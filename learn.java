@@ -333,6 +333,54 @@ public class learn
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập tên cửa hàng: :");
         String tenCuaHang = scanner.nextLine();
+        CuaHang cuaHang1 = new CuaHang(tenCuaHang, "123 Street", "0123456789");
+        cuaHang1.hienThiThongTinCuaHang();
+        for (int i = 0; i < 2; i++) {
+            System.out.print("Nhập tên nhân viên: ");
+            String tenNhanVien = scanner.nextLine();
+            System.out.print("Nhập địa chỉ: ");
+            String diaChi = scanner.nextLine();
+            System.out.print("Nhập số điện thoại: ");
+            String soDienThoai = scanner.nextLine();
+            System.out.print("Nhập chức vụ: ");
+            String chucVu = scanner.nextLine();
+            System.out.print("Nhập lương: ");
+            double luong = scanner.nextDouble();
+            System.out.print("Nhập số giờ làm việc: ");
+            int soGioLamViec = scanner.nextInt();
+            System.out.print("Nhập số ngày nghỉ: ");
+            int soNgayNghi = scanner.nextInt();
+            System.out.print("Nhập số giờ làm thêm: ");
+            int soGioLamThem = scanner.nextInt();
+            scanner.nextLine(); // Clear the newline character
+
+            NhanVien nhanVien = new NhanVien(tenNhanVien, diaChi, soDienThoai, chucVu, luong, soGioLamViec, soNgayNghi, soGioLamThem);
+            cuaHang1.themNhanVien(nhanVien);
+        }
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Nhập tên khách hàng: ");
+            String tenKhachHang = scanner.nextLine();
+            System.out.print("Nhập địa chỉ: ");
+            String diaChi = scanner.nextLine();
+            System.out.print("Nhập số điện thoại: ");
+            String soDienThoai = scanner.nextLine();
+            System.out.print("Nhập email: ");
+            String email = scanner.nextLine();
+            System.out.print("Nhập giới tính: ");
+            String gioiTinh = scanner.nextLine();
+            System.out.print("Nhập số lần mua hàng: ");
+            int soLanMuaHang = scanner.nextInt();
+            System.out.print("Nhập tổng chi tiêu: ");
+            double tongChiTieu = scanner.nextDouble();
+            scanner.nextLine(); // Clear the newline character
+            System.out.print("Nhập ngày sinh: ");
+            String ngaySinh = scanner.nextLine();
+            System.out.print("Nhập ngày đăng ký: ");
+            String ngayDangKy = scanner.nextLine();
+
+            KhachHang khachHang = new KhachHang(tenKhachHang, diaChi, soDienThoai, email, gioiTinh, soLanMuaHang, tongChiTieu, ngaySinh, ngayDangKy);
+            cuaHang1.themKhachHang(khachHang);
+        }
         scanner.close();
     }
 }
