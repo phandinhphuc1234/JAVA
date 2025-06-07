@@ -39,6 +39,27 @@ public class NhanVien {
         return luong;
     }
 }
+
+public class NhanVienFullTime extends NhanVien {
+    private double luongCoBan;
+    private double phuCap;
+
+    public NhanVienFullTime(String tenNhanVien, String diaChi, String soDienThoai, String chucVu, double luong, int soGioLamViec, int soNgayNghi, int soGioTangCa, double luongCoBan, double phuCap) {
+        super(tenNhanVien, diaChi, soDienThoai, chucVu, luong, soGioLamViec, soNgayNghi, soGioTangCa);
+        this.luongCoBan = luongCoBan;
+        this.phuCap = phuCap;
+    }
+
+    public double getLuongCoBan() {
+        return luongCoBan;
+    }
+
+    public double getPhuCap() {
+        return phuCap;
+    }
+}
+
+
 public class arr {
     public static void main(String[] args) {
         // Example usage of the NhanVien class

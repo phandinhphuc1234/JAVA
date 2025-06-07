@@ -381,6 +381,10 @@ public class learn
             KhachHang khachHang = new KhachHang(tenKhachHang, diaChi, soDienThoai, email, gioiTinh, soLanMuaHang, tongChiTieu, ngaySinh, ngayDangKy);
             cuaHang1.themKhachHang(khachHang);
         }
+
+        cuaHang1.hienThiThongTinCuaHang();
+
+
         scanner.close();
     }
 }
