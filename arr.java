@@ -1,3 +1,44 @@
+public class NhanVien {
+    private String tenNhanVien;
+    private String diaChi;
+    private String soDienThoai;
+    private String chucVu;
+    private double luong;
+    private int soGioLamViec;
+    private int soNgayNghi;
+    private int soGioTangCa;
+
+    public NhanVien(String tenNhanVien, String diaChi, String soDienThoai, String chucVu, double luong, int soGioLamViec, int soNgayNghi, int soGioTangCa) {
+        this.tenNhanVien = tenNhanVien;
+        this.diaChi = diaChi;
+        this.soDienThoai = soDienThoai;
+        this.chucVu = chucVu;
+        this.luong = luong;
+        this.soGioLamViec = soGioLamViec;
+        this.soNgayNghi = soNgayNghi;
+        this.soGioTangCa = soGioTangCa;
+    }
+
+    public String getTenNhanVien() {
+        return tenNhanVien;
+    }
+
+    public String getDiaChi() {
+        return diaChi;
+    }
+
+    public String getSoDienThoai() {
+        return soDienThoai;
+    }
+
+    public String getChucVu() {
+        return chucVu;
+    }
+
+    public double getLuong() {
+        return luong;
+    }
+}
 public class arr {
     public static void main(String[] args) {
         // Example usage of the NhanVien class
